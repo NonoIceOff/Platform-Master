@@ -1,6 +1,9 @@
 # Godot 4+ specific ignores
-.godot/
-!.godot/uid_cache.bin
+.godot/editor
+.godot/exported
+.godot/imported
+.godot/shader_cache
+
 
 .import/
 export.cfg
