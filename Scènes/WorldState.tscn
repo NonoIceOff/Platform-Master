@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://don3c0oyvaapu"]
+
+[ext_resource type="Texture2D" uid="uid://co4qjeoiase5d" path="res://Textures/Blocks/dirt.png" id="14"]
+[ext_resource type="Script" path="res://Scripts/WorldState.gd" id="16"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="WorldState" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 712.0
+script = ExtResource("16")
+
+[node name="TextureRect" type="TextureRect" parent="WorldState"]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 1280.0
+offset_bottom = 736.0
+texture = ExtResource("14")
+stretch_mode = 1
+
+[node name="Title" type="Label" parent="WorldState"]
+texture_filter = 1
+layout_mode = 0
+offset_top = 308.0
+offset_right = 320.0
+offset_bottom = 325.0
+scale = Vector2(4, 4)
+text = "menu_worldstate_creating_world"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WorldInfos" type="Label" parent="WorldState"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 4.0
+offset_top = 384.0
+offset_right = 642.0
+offset_bottom = 423.0
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_shadow_color = Color(0.254902, 0.00392157, 0.32549, 1)
+text = "World Name :
+World Seed :
+Game Mode :"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Effects" type="AudioStreamPlayer" parent="."]
+volume_db = -80.0
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+volume_db = -80.0

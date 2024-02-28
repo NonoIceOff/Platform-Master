@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://702p0psfx0mm"]
+
+[ext_resource type="Script" path="res://show_results.gd" id="1_j0y65"]
+[ext_resource type="Theme" uid="uid://cevidcpcvdp7q" path="res://Themes/new_theme.tres" id="1_vr66f"]
+[ext_resource type="Texture2D" uid="uid://6vmf83apjw2v" path="res://Textures/Blocks/clay_bricks.png" id="2_arcq5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wt4ex"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l41m8"]
+bg_color = Color(0, 0.713726, 0.470588, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[node name="show_results" type="Panel"]
+z_index = 99
+offset_left = -19.0
+offset_top = -18.0
+offset_right = 13.0
+offset_bottom = 14.0
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1_j0y65")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_top = 32.0
+offset_right = 32.0
+offset_bottom = 64.0
+rotation = -1.5708
+theme = ExtResource("1_vr66f")
+theme_override_styles/background = SubResource("StyleBoxEmpty_wt4ex")
+theme_override_styles/fill = SubResource("StyleBoxFlat_l41m8")
+step = 1.0
+value = 50.0
+show_percentage = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(16, 8)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_arcq5")
+
+[node name="Seconds" type="Label" parent="."]
+layout_mode = 0
+offset_top = 19.0
+offset_right = 32.0
+offset_bottom = 34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "20"
+horizontal_alignment = 1
+vertical_alignment = 1

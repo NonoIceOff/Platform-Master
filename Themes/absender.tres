@@ -1,0 +1,6 @@
+[gd_resource type="FontFile" format=2]
+
+[resource]
+antialiased = false
+hinting = 0
+font_path = "res://Themes/absender1.ttf"

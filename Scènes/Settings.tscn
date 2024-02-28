@@ -1,0 +1,236 @@
+[gd_scene load_steps=6 format=3 uid="uid://c5l1ykx7j6o4p"]
+
+[ext_resource type="Script" path="res://Scripts/Buttons.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/Settings.gd" id="6"]
+[ext_resource type="Texture2D" uid="uid://co4qjeoiase5d" path="res://Textures/Blocks/dirt.png" id="14"]
+
+[sub_resource type="FontFile" id="1"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([SubResource("1")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Settings" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 712.0
+script = ExtResource("6")
+
+[node name="TextureRect" type="TextureRect" parent="Settings"]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 1280.0
+offset_bottom = 724.0
+texture = ExtResource("14")
+stretch_mode = 1
+
+[node name="Back" type="Button" parent="Settings"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 128.0
+offset_bottom = 37.0
+script = ExtResource("1")
+
+[node name="Label" type="Label" parent="Settings/Back"]
+texture_filter = 1
+layout_mode = 0
+offset_top = -1.0
+offset_right = 60.0
+offset_bottom = 14.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 3
+size_flags_vertical = 7
+mouse_filter = 1
+text = "menu_back"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Line2D" type="Line2D" parent="Settings"]
+points = PackedVector2Array(384, 88, 896, 88)
+width = 2.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Music" type="Button" parent="Settings"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 225.0
+offset_right = 896.0
+offset_bottom = 289.0
+focus_mode = 0
+theme_override_fonts/font = SubResource("2")
+script = ExtResource("1")
+
+[node name="Label" type="Label" parent="Settings/Music"]
+texture_filter = 1
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+size_flags_horizontal = 3
+size_flags_vertical = 7
+mouse_filter = 1
+text = "menu_settings_sounds"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Video" type="Button" parent="Settings"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 301.0
+offset_right = 896.0
+offset_bottom = 365.0
+focus_mode = 0
+theme_override_fonts/font = SubResource("2")
+script = ExtResource("1")
+
+[node name="Label" type="Label" parent="Settings/Video"]
+texture_filter = 1
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+size_flags_horizontal = 3
+size_flags_vertical = 7
+mouse_filter = 1
+text = "menu_settings_video"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="KeyBindings" type="Button" parent="Settings"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 377.0
+offset_right = 896.0
+offset_bottom = 441.0
+focus_mode = 0
+theme_override_fonts/font = SubResource("2")
+script = ExtResource("1")
+
+[node name="Label" type="Label" parent="Settings/KeyBindings"]
+texture_filter = 1
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+size_flags_horizontal = 3
+size_flags_vertical = 7
+mouse_filter = 1
+text = "menu_settings_controls"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Languages" type="Button" parent="Settings"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 453.0
+offset_right = 896.0
+offset_bottom = 517.0
+focus_mode = 0
+theme_override_fonts/font = SubResource("2")
+script = ExtResource("1")
+
+[node name="Label" type="Label" parent="Settings/Languages"]
+texture_filter = 1
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+size_flags_horizontal = 3
+size_flags_vertical = 7
+mouse_filter = 1
+text = "menu_settings_languages"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Apparences" type="Button" parent="Settings"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 529.0
+offset_right = 896.0
+offset_bottom = 593.0
+focus_mode = 0
+theme_override_fonts/font = SubResource("2")
+expand_icon = true
+script = ExtResource("1")
+
+[node name="Label" type="Label" parent="Settings/Apparences"]
+texture_filter = 1
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+size_flags_horizontal = 3
+size_flags_vertical = 7
+mouse_filter = 1
+text = "menu_settings_apparences"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Title" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_top = 32.0
+offset_right = 320.0
+offset_bottom = 43.0
+scale = Vector2(4, 4)
+text = "menu_settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Effects" type="AudioStreamPlayer" parent="."]
+volume_db = -80.0
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+volume_db = -80.0
+
+[connection signal="mouse_entered" from="Settings/Back" to="Settings/Back" method="_on_Back_mouse_entered"]
+[connection signal="mouse_exited" from="Settings/Back" to="Settings/Back" method="_on_Back_mouse_exited"]
+[connection signal="pressed" from="Settings/Back" to="Settings" method="_on_Back_pressed"]
+[connection signal="mouse_entered" from="Settings/Music" to="Settings/Music" method="_on_Music_mouse_entered"]
+[connection signal="mouse_exited" from="Settings/Music" to="Settings/Music" method="_on_Music_mouse_exited"]
+[connection signal="pressed" from="Settings/Music" to="Settings" method="_on_Music_pressed"]
+[connection signal="mouse_entered" from="Settings/Video" to="Settings/Video" method="_on_Video_mouse_entered"]
+[connection signal="mouse_exited" from="Settings/Video" to="Settings/Video" method="_on_Video_mouse_exited"]
+[connection signal="pressed" from="Settings/Video" to="Settings" method="_on_Video_pressed"]
+[connection signal="mouse_entered" from="Settings/KeyBindings" to="Settings/KeyBindings" method="_on_KeyBindings_mouse_entered"]
+[connection signal="mouse_exited" from="Settings/KeyBindings" to="Settings/KeyBindings" method="_on_KeyBindings_mouse_exited"]
+[connection signal="pressed" from="Settings/KeyBindings" to="Settings" method="_on_KeyBindings_pressed"]
+[connection signal="mouse_entered" from="Settings/Languages" to="Settings/Languages" method="_on_Languages_mouse_entered"]
+[connection signal="mouse_exited" from="Settings/Languages" to="Settings/Languages" method="_on_Languages_mouse_exited"]
+[connection signal="pressed" from="Settings/Languages" to="Settings" method="_on_Languages_pressed"]
+[connection signal="mouse_entered" from="Settings/Apparences" to="Settings/Apparences" method="_on_Languages_mouse_entered"]
+[connection signal="mouse_exited" from="Settings/Apparences" to="Settings/Apparences" method="_on_Languages_mouse_exited"]
+[connection signal="pressed" from="Settings/Apparences" to="Settings" method="_on_Apparences_pressed"]

@@ -1,0 +1,89 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Textures/Mobs/shaded_sbire.png" type="Texture2D" id=1]
+[ext_resource path="res://shape_mob.tres" type="Shape2D" id=2]
+[ext_resource path="res://Scripts/Mob.gd" type="Script" id=3]
+[ext_resource path="res://Textures/white.png" type="Texture2D" id=4]
+[ext_resource path="res://Textures/red.png" type="Texture2D" id=5]
+[ext_resource path="res://Textures/fire.png" type="Texture2D" id=6]
+[ext_resource path="res://shape_mob_hit.tres" type="Shape2D" id=7]
+[ext_resource path="res://shadow_boss_anims.tres" type="SpriteFrames" id=8]
+[ext_resource path="res://Scripts/MobSounds.gd" type="Script" id=9]
+
+[node name="Mob" type="CharacterBody2D"]
+light_mask = 2
+position = Vector2( 2, 0 )
+collision_layer = 2
+collision_mask = 2
+input_pickable = true
+script = ExtResource( 3 )
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2( 0, -1 )
+scale = Vector2( 2, 2 )
+frames = ExtResource( 8 )
+animation = "idle"
+frame = 1
+playing = true
+
+[node name="Texture2D" type="Sprite2D" parent="."]
+position = Vector2( 0, -1 )
+texture = ExtResource( 1 )
+
+[node name="ShapeMob" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -1 )
+shape = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 0, -1 )
+
+[node name="ShapeMob" type="CollisionShape2D" parent="Area2D"]
+shape = ExtResource( 7 )
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+offset_left = -16.0
+offset_top = -24.0
+offset_right = 16.0
+offset_bottom = -20.0
+value = 100.0
+texture_under = ExtResource( 4 )
+texture_progress = ExtResource( 5 )
+nine_patch_stretch = true
+
+[node name="Fire" type="Sprite2D" parent="."]
+visible = false
+position = Vector2( 0, 9 )
+texture = ExtResource( 6 )
+
+[node name="Damages" type="Label" parent="."]
+offset_left = -60.0
+offset_top = -40.0
+offset_right = 132.0
+offset_bottom = -21.0
+scale = Vector2( 0.6, 0.6 )
+align = 1
+valign = 1
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MobSounds" type="AudioStreamPlayer2D" parent="."]
+script = ExtResource( 9 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Network_tick_rate" type="Timer" parent="."]
+wait_time = 0.03
+autostart = true
+
+[node name="hit_timer" type="Timer" parent="."]
+wait_time = 0.25
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_Area2D_mouse_exited"]
+[connection signal="timeout" from="Network_tick_rate" to="." method="_on_Network_tick_rate_timeout"]
+[connection signal="timeout" from="hit_timer" to="." method="_on_hit_timer_timeout"]

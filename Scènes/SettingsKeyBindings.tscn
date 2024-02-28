@@ -1,0 +1,205 @@
+[gd_scene load_steps=4 format=3 uid="uid://drl3v1y2expgq"]
+
+[ext_resource type="Script" path="res://Scripts/SettingsKeyBindings.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/Buttons.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://co4qjeoiase5d" path="res://Textures/Blocks/dirt.png" id="14"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SettingsKeyBindings" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 712.0
+script = ExtResource("1")
+
+[node name="TextureRect" type="TextureRect" parent="SettingsKeyBindings"]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 1280.0
+offset_bottom = 736.0
+texture = ExtResource("14")
+stretch_mode = 1
+
+[node name="Back" type="Button" parent="SettingsKeyBindings"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 128.0
+offset_bottom = 37.0
+script = ExtResource("2")
+
+[node name="Label" type="Label" parent="SettingsKeyBindings/Back"]
+texture_filter = 1
+layout_mode = 0
+offset_top = -1.0
+offset_right = 60.0
+offset_bottom = 14.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 3
+size_flags_vertical = 7
+mouse_filter = 1
+text = "menu_back"
+clip_text = true
+
+[node name="Line2D" type="Line2D" parent="SettingsKeyBindings"]
+points = PackedVector2Array(384, 88, 896, 88)
+width = 2.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="ReverseMouse" type="CheckButton" parent="SettingsKeyBindings"]
+visible = false
+layout_mode = 0
+offset_left = 24.0
+offset_top = 100.0
+offset_right = 572.0
+offset_bottom = 128.0
+focus_mode = 0
+text = "INVERSER LES CLIQUES DE SOURIS"
+flat = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="SettingsKeyBindings"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 140.0
+offset_right = 640.0
+offset_bottom = 428.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="VBoxContainer3" type="HBoxContainer" parent="SettingsKeyBindings/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="VBoxContainer1" type="VBoxContainer" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="Left" type="Label" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1"]
+layout_mode = 2
+text = "Move to the left"
+
+[node name="Left" type="Button" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Left"]
+offset_left = 200.0
+offset_right = 260.0
+offset_bottom = 12.0
+text = "LEFT"
+
+[node name="Right" type="Label" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1"]
+layout_mode = 2
+text = "Move to the right"
+
+[node name="Right" type="Button" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Right"]
+offset_left = 200.0
+offset_right = 260.0
+offset_bottom = 12.0
+text = "RIGHT"
+
+[node name="Sprint" type="Label" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1"]
+layout_mode = 2
+text = "Sprint"
+
+[node name="Sprint" type="Button" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Sprint"]
+offset_left = 200.0
+offset_right = 260.0
+offset_bottom = 12.0
+text = "CTRL"
+
+[node name="Jump" type="Label" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1"]
+layout_mode = 2
+text = "Jump"
+
+[node name="Jump" type="Button" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Jump"]
+offset_left = 200.0
+offset_right = 260.0
+offset_bottom = 12.0
+text = "SPACE"
+
+[node name="Inventory" type="Label" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1"]
+layout_mode = 2
+text = "Open inventory"
+
+[node name="Inventory" type="Button" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Inventory"]
+offset_left = 200.0
+offset_right = 260.0
+offset_bottom = 12.0
+text = "E"
+
+[node name="Armors" type="Label" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1"]
+layout_mode = 2
+text = "open armor menu"
+
+[node name="Armors" type="Button" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Armors"]
+offset_left = 200.0
+offset_right = 260.0
+offset_bottom = 12.0
+text = "I"
+
+[node name="Chat" type="Label" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1"]
+layout_mode = 2
+text = "open chat"
+
+[node name="Chat" type="Button" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Chat"]
+offset_left = 200.0
+offset_right = 260.0
+offset_bottom = 12.0
+text = "T"
+
+[node name="F3" type="Label" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1"]
+layout_mode = 2
+text = "open debug menu"
+
+[node name="F3" type="Button" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/F3"]
+offset_left = 200.0
+offset_right = 260.0
+offset_bottom = 12.0
+text = "F3"
+
+[node name="Drop" type="Label" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1"]
+layout_mode = 2
+text = "drop an item"
+
+[node name="Drop" type="Button" parent="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Drop"]
+offset_left = 200.0
+offset_right = 260.0
+offset_bottom = 12.0
+text = "A"
+
+[node name="Title" type="Label" parent="SettingsKeyBindings"]
+texture_filter = 1
+layout_mode = 0
+offset_top = 32.0
+offset_right = 320.0
+offset_bottom = 43.0
+scale = Vector2(4, 4)
+text = "menu_controls"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Effects" type="AudioStreamPlayer" parent="."]
+volume_db = -80.0
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+volume_db = -80.0
+
+[connection signal="mouse_entered" from="SettingsKeyBindings/Back" to="SettingsKeyBindings/Back" method="_on_Back_mouse_entered"]
+[connection signal="mouse_exited" from="SettingsKeyBindings/Back" to="SettingsKeyBindings/Back" method="_on_Back_mouse_exited"]
+[connection signal="pressed" from="SettingsKeyBindings/Back" to="SettingsKeyBindings" method="_on_Back_pressed"]
+[connection signal="pressed" from="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Left/Left" to="SettingsKeyBindings" method="_on_left_pressed"]
+[connection signal="pressed" from="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Right/Right" to="SettingsKeyBindings" method="_on_right_pressed"]
+[connection signal="pressed" from="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Sprint/Sprint" to="SettingsKeyBindings" method="_on_sprint_pressed"]
+[connection signal="pressed" from="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Jump/Jump" to="SettingsKeyBindings" method="_on_jump_pressed"]
+[connection signal="pressed" from="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Inventory/Inventory" to="SettingsKeyBindings" method="_on_inventory_pressed"]
+[connection signal="pressed" from="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Armors/Armors" to="SettingsKeyBindings" method="_on_armors_pressed"]
+[connection signal="pressed" from="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Chat/Chat" to="SettingsKeyBindings" method="_on_chat_pressed"]
+[connection signal="pressed" from="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/F3/F3" to="SettingsKeyBindings" method="_on_f_3_pressed"]
+[connection signal="pressed" from="SettingsKeyBindings/ScrollContainer/VBoxContainer3/VBoxContainer1/Drop/Drop" to="SettingsKeyBindings" method="_on_drop_pressed"]

@@ -1,0 +1,169 @@
+[gd_scene load_steps=6 format=3 uid="uid://xa6t83dpey05"]
+
+[ext_resource type="Script" path="res://Scripts/Buttons.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/WorldsMenu.gd" id="8"]
+[ext_resource type="Texture2D" uid="uid://co4qjeoiase5d" path="res://Textures/Blocks/dirt.png" id="14"]
+
+[sub_resource type="FontFile" id="1"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([SubResource("1")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WorldsMenu" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 712.0
+script = ExtResource("8")
+
+[node name="TextureRect" type="TextureRect" parent="WorldsMenu"]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 1280.0
+offset_bottom = 732.0
+texture = ExtResource("14")
+stretch_mode = 1
+
+[node name="Back" type="Button" parent="WorldsMenu"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 128.0
+offset_bottom = 37.0
+script = ExtResource("1")
+
+[node name="Label" type="Label" parent="WorldsMenu/Back"]
+texture_filter = 1
+layout_mode = 0
+offset_top = -1.0
+offset_right = 60.0
+offset_bottom = 14.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 3
+size_flags_vertical = 7
+mouse_filter = 1
+text = "menu_back"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Line2D" type="Line2D" parent="WorldsMenu"]
+points = PackedVector2Array(384, 88, 896, 88)
+width = 2.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="CreateWorld" type="Button" parent="WorldsMenu"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 96.0
+offset_right = 768.0
+offset_bottom = 123.0
+focus_mode = 0
+theme_override_fonts/font = SubResource("2")
+expand_icon = true
+script = ExtResource("1")
+
+[node name="Label" type="Label" parent="WorldsMenu/CreateWorld"]
+texture_filter = 1
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 14.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 3
+size_flags_vertical = 7
+mouse_filter = 1
+text = "menu_worldlist_createworld"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="WorldsMenu"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 126.0
+offset_right = 1184.0
+offset_bottom = 716.0
+size_flags_horizontal = 5
+size_flags_vertical = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="WorldsMenu/ScrollContainer"]
+layout_mode = 2
+theme_override_constants/separation = 25
+
+[node name="Title" type="Label" parent="WorldsMenu"]
+texture_filter = 1
+layout_mode = 0
+offset_top = 32.0
+offset_right = 320.0
+offset_bottom = 43.0
+scale = Vector2(4, 4)
+text = "menu_worldlist"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Achievements" type="Button" parent="WorldsMenu"]
+layout_mode = 0
+offset_left = 1080.0
+offset_top = 8.0
+offset_right = 1272.0
+offset_bottom = 35.0
+focus_mode = 0
+theme_override_fonts/font = SubResource("2")
+script = ExtResource("1")
+
+[node name="Label" type="Label" parent="WorldsMenu/Achievements"]
+texture_filter = 1
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 14.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 3
+size_flags_vertical = 7
+mouse_filter = 1
+text = "menu_worldlist_achievements"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Effects" type="AudioStreamPlayer" parent="."]
+volume_db = -80.0
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+volume_db = -80.0
+
+[connection signal="mouse_entered" from="WorldsMenu/Back" to="WorldsMenu/Back" method="_on_Back_mouse_entered"]
+[connection signal="mouse_exited" from="WorldsMenu/Back" to="WorldsMenu/Back" method="_on_Back_mouse_exited"]
+[connection signal="pressed" from="WorldsMenu/Back" to="WorldsMenu" method="_on_Back_pressed"]
+[connection signal="mouse_entered" from="WorldsMenu/CreateWorld" to="WorldsMenu/CreateWorld" method="_on_CreateWorld_mouse_entered"]
+[connection signal="mouse_exited" from="WorldsMenu/CreateWorld" to="WorldsMenu/CreateWorld" method="_on_CreateWorld_mouse_exited"]
+[connection signal="pressed" from="WorldsMenu/CreateWorld" to="WorldsMenu" method="_on_CreateWorld_pressed"]
+[connection signal="pressed" from="WorldsMenu/Achievements" to="WorldsMenu" method="_on_Achievements_pressed"]

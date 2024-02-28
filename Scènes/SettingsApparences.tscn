@@ -1,0 +1,303 @@
+[gd_scene load_steps=17 format=3 uid="uid://j21sppcakvn6"]
+
+[ext_resource type="Script" path="res://Scripts/Buttons.gd" id="1"]
+[ext_resource type="Script" path="res://Scènes/SettingsApparences.gd" id="2"]
+[ext_resource type="FontFile" path="res://Themes/basic.tres" id="3"]
+[ext_resource type="Theme" uid="uid://cevidcpcvdp7q" path="res://Themes/new_theme.tres" id="4"]
+[ext_resource type="SpriteFrames" path="res://Player_Anim.tres" id="5"]
+[ext_resource type="Texture2D" uid="uid://bwt0lcmgyqcsk" path="res://Textures/Blocks/snow.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://ba3dq1u4qgeoa" path="res://Textures/white.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://jvq80liq3rsr" path="res://Textures/Items/crown.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://ddokrqkdj4lyn" path="res://Textures/Personnage/Shirt/player.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cmmkcrhmlh0l8" path="res://Textures/Personnage/Heads/1.png" id="10"]
+[ext_resource type="SpriteFrames" path="res://HairFrames.tres" id="11"]
+[ext_resource type="Script" path="res://Scènes/HeadShape.gd" id="12"]
+[ext_resource type="Texture2D" uid="uid://bosxm86lg4q2s" path="res://Textures/Personnage/Legs/Legs.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://co4qjeoiase5d" path="res://Textures/Blocks/dirt.png" id="14"]
+[ext_resource type="Script" path="res://Scènes/HairsType.gd" id="15"]
+[ext_resource type="Theme" uid="uid://b7mjswntukbu2" path="res://Themes/black_and_white_theme.tres" id="16"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SettingsApparences" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 712.0
+script = ExtResource("2")
+
+[node name="TextureRect" type="TextureRect" parent="SettingsApparences"]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 1280.0
+offset_bottom = 736.0
+texture = ExtResource("14")
+stretch_mode = 1
+
+[node name="Back" type="Button" parent="SettingsApparences"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 128.0
+offset_bottom = 37.0
+script = ExtResource("1")
+
+[node name="Label" type="Label" parent="SettingsApparences/Back"]
+texture_filter = 1
+layout_mode = 0
+offset_top = -1.0
+offset_right = 60.0
+offset_bottom = 14.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 3
+size_flags_vertical = 7
+mouse_filter = 1
+text = "menu_back"
+clip_text = true
+
+[node name="Line2D" type="Line2D" parent="SettingsApparences"]
+points = PackedVector2Array(384, 88, 896, 88)
+width = 2.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Title" type="Label" parent="SettingsApparences"]
+texture_filter = 1
+layout_mode = 0
+offset_top = 32.0
+offset_right = 320.0
+offset_bottom = 43.0
+scale = Vector2(4, 4)
+text = "menu_apparences"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Name" type="Label" parent="SettingsApparences"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 100.0
+offset_top = 128.0
+offset_right = 387.0
+offset_bottom = 139.0
+scale = Vector2(2, 2)
+theme = ExtResource("16")
+text = "menu_apparences_nickname"
+
+[node name="ColorPickerButton" type="LineEdit" parent="SettingsApparences/Name"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 14.0
+offset_right = 316.0
+offset_bottom = 28.0
+theme = ExtResource("16")
+placeholder_text = "menu_apparences_nickname_placeholder"
+max_length = 32
+
+[node name="NameColor" type="Label" parent="SettingsApparences"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 100.0
+offset_top = 224.0
+offset_right = 387.0
+offset_bottom = 235.0
+scale = Vector2(2, 2)
+theme = ExtResource("16")
+text = "menu_apparencences_nickname_color"
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="SettingsApparences/NameColor"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 18.0
+offset_right = 188.0
+offset_bottom = 42.0
+scale = Vector2(0.5, 0.5)
+theme = ExtResource("16")
+color = Color(1, 1, 1, 1)
+
+[node name="HairColor" type="Label" parent="SettingsApparences"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 100.0
+offset_top = 320.0
+offset_right = 387.0
+offset_bottom = 331.0
+scale = Vector2(2, 2)
+theme = ExtResource("16")
+text = "menu_apparences_hair_color"
+
+[node name="HairButton" type="ColorPickerButton" parent="SettingsApparences/HairColor"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 18.0
+offset_right = 188.0
+offset_bottom = 42.0
+scale = Vector2(0.5, 0.5)
+focus_mode = 0
+theme = ExtResource("16")
+color = Color(1, 1, 1, 1)
+edit_alpha = false
+
+[node name="TShirtColor" type="Label" parent="SettingsApparences"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 100.0
+offset_top = 416.0
+offset_right = 387.0
+offset_bottom = 427.0
+scale = Vector2(2, 2)
+theme = ExtResource("16")
+text = "menu_apparences_tshirt_color"
+
+[node name="TShirtButton" type="ColorPickerButton" parent="SettingsApparences/TShirtColor"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 18.0
+offset_right = 188.0
+offset_bottom = 42.0
+scale = Vector2(0.5, 0.5)
+focus_mode = 0
+theme = ExtResource("16")
+color = Color(1, 1, 1, 1)
+edit_alpha = false
+
+[node name="LegsColor" type="Label" parent="SettingsApparences"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 100.0
+offset_top = 512.0
+offset_right = 387.0
+offset_bottom = 523.0
+scale = Vector2(2, 2)
+theme = ExtResource("16")
+text = "menu_apparences_leggings_color"
+
+[node name="LegsButton" type="ColorPickerButton" parent="SettingsApparences/LegsColor"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 18.0
+offset_right = 188.0
+offset_bottom = 42.0
+scale = Vector2(0.5, 0.5)
+focus_mode = 0
+theme = ExtResource("16")
+color = Color(1, 1, 1, 1)
+edit_alpha = false
+
+[node name="HeadShape" type="Label" parent="SettingsApparences"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 400.0
+offset_top = 224.0
+offset_right = 687.0
+offset_bottom = 235.0
+scale = Vector2(2, 2)
+theme = ExtResource("16")
+text = "menu_apparences_head_shape"
+script = ExtResource("12")
+
+[node name="HairsType" type="Label" parent="SettingsApparences"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 400.0
+offset_top = 321.0
+offset_right = 687.0
+offset_bottom = 332.0
+scale = Vector2(2, 2)
+theme = ExtResource("16")
+text = "menu_apparences_hair_style"
+script = ExtResource("15")
+
+[node name="Sprite2D" type="Sprite2D" parent="SettingsApparences"]
+modulate = Color(1, 0.976471, 0.976471, 1)
+self_modulate = Color(0.25098, 0.537255, 0.788235, 1)
+position = Vector2(1041, 388)
+scale = Vector2(286, 376)
+texture = ExtResource("7")
+
+[node name="Player" type="CharacterBody2D" parent="SettingsApparences"]
+position = Vector2(1032, 464)
+scale = Vector2(4, 4)
+
+[node name="Perso" type="AnimatedSprite2D" parent="SettingsApparences/Player"]
+light_mask = 2
+position = Vector2(-1.11111, -14.4444)
+scale = Vector2(2.4, 2.4)
+sprite_frames = ExtResource("5")
+animation = &"wait"
+
+[node name="TShirt" type="Sprite2D" parent="SettingsApparences/Player"]
+position = Vector2(3.70001, -12.05)
+scale = Vector2(2.4, 2.4)
+texture = ExtResource("9")
+
+[node name="Head" type="Sprite2D" parent="SettingsApparences/Player"]
+position = Vector2(3.70001, -30.05)
+scale = Vector2(2.4, 2.4)
+texture = ExtResource("10")
+
+[node name="Legs" type="Sprite2D" parent="SettingsApparences/Player"]
+position = Vector2(2.5, 4.75)
+scale = Vector2(2.4, 2.4)
+texture = ExtResource("13")
+
+[node name="Hair" type="AnimatedSprite2D" parent="SettingsApparences/Player"]
+position = Vector2(-3.5, -24.05)
+scale = Vector2(2.4, 2.4)
+sprite_frames = ExtResource("11")
+animation = &"Hair1"
+frame = 1
+
+[node name="Item" type="Sprite2D" parent="SettingsApparences/Player"]
+position = Vector2(20, -5)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6")
+
+[node name="Nick" type="Label" parent="SettingsApparences/Player"]
+texture_filter = 1
+offset_left = -41.0
+offset_top = -58.0
+offset_right = 84.0
+offset_bottom = -47.0
+scale = Vector2(0.7, 0.7)
+theme = ExtResource("4")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_fonts/font = ExtResource("3")
+text = "menu_apparences_player"
+clip_text = true
+
+[node name="Crown" type="Sprite2D" parent="SettingsApparences/Player"]
+visible = false
+position = Vector2(-10, -43.3333)
+rotation = -0.785398
+texture = ExtResource("8")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="SettingsApparences/Player/Crown"]
+visible = false
+z_index = -1
+amount = 5
+speed_scale = 0.25
+explosiveness = 1.0
+randomness = 1.0
+emission_shape = 1
+emission_sphere_radius = 5.0
+spread = 0.0
+gravity = Vector2(-100, -100)
+color = Color(1, 0.619608, 0, 1)
+
+[node name="Effects" type="AudioStreamPlayer" parent="."]
+volume_db = -80.0
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+volume_db = -80.0
+
+[connection signal="mouse_entered" from="SettingsApparences/Back" to="SettingsApparences/Back" method="_on_Back_mouse_entered"]
+[connection signal="mouse_exited" from="SettingsApparences/Back" to="SettingsApparences/Back" method="_on_Back_mouse_exited"]
+[connection signal="pressed" from="SettingsApparences/Back" to="SettingsApparences" method="_on_Back_pressed"]
+[connection signal="text_changed" from="SettingsApparences/Name/ColorPickerButton" to="SettingsApparences" method="_on_ColorPickerButton_text_changed"]
+[connection signal="color_changed" from="SettingsApparences/NameColor/ColorPickerButton" to="SettingsApparences" method="_on_ColorPickerButton_color_changed"]
+[connection signal="color_changed" from="SettingsApparences/HairColor/HairButton" to="SettingsApparences" method="_on_HairButton_color_changed"]
+[connection signal="color_changed" from="SettingsApparences/TShirtColor/TShirtButton" to="SettingsApparences" method="_on_TShirtButton_color_changed"]
+[connection signal="color_changed" from="SettingsApparences/LegsColor/LegsButton" to="SettingsApparences" method="_on_LegsButton_color_changed"]

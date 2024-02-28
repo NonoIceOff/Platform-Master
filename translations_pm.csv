@@ -1,0 +1,293 @@
+,en,fr
+START,Start,Demarrer
+ACHIEVEMENTS,Achievements,Realisations
+SETTINGS,Settings,Parametres
+CREDITS,Credits,Credits
+BACK,Back,Retour
+WORLD LIST,World list,Liste des mondes
+CREATE WORLD,Create world,Creer un monde
+CREATING WORLD,Creating world,Creation du monde
+LOADING WORLD,Loading world,Chargement du monde
+FLY MODE,Fly mode,Mode vol
+ALL,All,Tout
+CREATIVE INVENTORY,Creative inventory,Inventaire creatif
+SURVIVAL INVENTORY,Survival inventory,Inventaire survie
+WORLD NAME,World name,Nom du monde
+WORLD SEED,World seed,Graine du monde
+GAME MODE,Game mode,Mode de jeu
+SURVIVAL MODE,Survival mode,Mode de survie
+CHEAT MODE,Cheat mode,Mode triche
+VISION MODE,Vision mode,Mode vision
+DESC SURVIVAL,"Protect yourself against monsters, build houses, explore the map, take care of your health and your food!","Protegez-vous des monstres, construisez des maisons, explorez la carte, prenez soin de votre sante et de votre nourriture !"
+DESC CHEAT,The cheat mode unlocks you the menu allowing you to give yourself all the items of the game and allows you to make yourself invincible. This mode disables successes for this world.,Le mode triche vous debloque le menu vous permettant de vous offrir tous les objets du jeu et vous permet de vous rendre invincible. Ce mode desactive les succes pour ce monde.
+DESC VISION,"Once active, you will be able to move the camera freely, at your own pace without obstacles: this is literally a spectator mode. this mode is irreversible for the moment.","Une fois active, vous pourrez deplacer la camera librement, à votre rythme et sans obstacles : il s'agit litteralement d'un mode spectateur. Ce mode est pour l'instant irreversible."
+CREATION OF THE WORLD,Creation of the world,Creation du monde
+LOADING THE WORLD,Loading the world,Chargement du monde
+SETTINGS MENU,Settings menu,Menu des parametres
+SOUNDS VOLUME,Sounds volume,Volume des sons
+NOT RECOMMENDED1,It's not recommended to turn on the sound to the max when you put on headphones!,Il n'est pas recommande de mettre le son au maximum lorsque vous mettez un casque !
+EFFECTS VOLUME,Effects volume,Volume des effets
+PLAYER VOLUME,Player volume,Volume du joueur
+BLOCKS VOLUME,Blocks volume,Volume des blocs
+MUSIC VOLUME,Music volume,Volume de la musique
+NOT RECOMMENDED2,"Worlds that have already been in cheat mode, will not unlock achievements",Les mondes qui ont dejà ete en mode triche ne debloqueront pas les succes.
+DEVELOPPER,Developper,Developpeur
+TEXTURES,Textures,Textures
+VIDEO,Video,Video
+FOV,Fied of view,Champ de vue
+SHOW PARTICULES,Show particules,Afficher les particules
+FULLSCREEN,Fullscreen,Plein ecran
+CHANGE RESOLUTION,Chance resolution,Changer la resolution
+SOUNDS,Sounds,Sons
+KEY BINDINGS,Key bindings,Raccourcis clavier
+LAUNCH,Launch,Lancer
+EDIT,Edit,Modifier
+DELETE,Delete,Supprimer
+VALIDATE,Validate,Valider
+BLOCKS,Blocks,Blocs
+ITEMS,Items,elements
+PLAYERS,Player,Joueur
+STATISTICS,Statistics,Statistiques
+MOBS,Mobs,Mobs
+TIME,Time,Temps
+PAUSE MENU,Pause menu,Menu Pause
+RESUME,Resume,Reprendre
+SAVE,Save,Sauvegarder
+TITLE MENU,Title menu,Menu titre
+CANCEL,Cancel,Annuler
+GRASS BLOCK,Grass block,Bloc d'herbe
+DIRT,Dirt,Terre
+STONE,Stone,Pierre
+COAL ORE,Coal ore,Minerai de charbon
+IRON ORE,Iron ore,Minerai de fer
+RUBY ORE,Ruby ore,Minerai de rubis
+SAPPHIRE ORE,Sapphire ore,Minerai de saphir
+EMERALD ORE,Emerald ore,Minerai d'emeraude
+ELECTRITIUM ORE,Electritium ore,Minerai d'electritium
+VOID STONE,Void store,Magasin du vide
+WATER UP,Water,Eau
+WATER DOWN,Flowing water,Eau courante
+SAND,Sand,Sable
+SANDSTONE,Sandstone,Gres
+SNOWY GRASS,Snowy grass,Herbe neigeuse
+SNOW,Snow,Neige
+OAK LOG,Oak log,Buche de chene
+LEAVES,Leaves,Feuilles
+PINE LOG,Pine log,Buche de pin
+CACTUS,Cactus,Cactus
+ASSEMBLY TABLE,Assembly table,Table d'assemblage
+WOODEN PICKAXE,Wooden pickaxe,Pioche en bois
+STONE PICKAXE,Stone pickaxe,Pioche en pierre
+IRON PICKAXE,Iron pickaxe,Pioche en fer
+RUBY PICKAXE,Ruby pickaxe,Pioche en rubis
+SAPPHIRE PICKAXE,Sapphire pickaxe,Pique saphir
+EMERALD PICKAXE,Emerald pickaxe,Pique d'emeraude
+WOODEN SHOVEL,Wooden shovel,Pelle en bois
+STONE SHOVEL,Stone shovel,Pelle en pierre
+IRON SHOVEL,Iron shovel,Pelle en fer
+RUBY SHOVEL,Ruby shovel,Pelle à rubis
+SAPPHIRE SHOVEL,Sapphire shovel,Pelle saphir
+EMERALD SHOVEL,Emerald shovel,Pelle d'emeraude
+WOODEN AXE,Wooden axe,Hache en bois
+STONE AXE,Stone axe,Hache en pierre
+IRON AXE,Iron axe,Hache en fer
+RUBY AXE,Ruby axe,Hache en rubis
+SAPPHIRE AXE,Sapphire axe,Hache saphir
+EMERALD AXE,Emerald axe,Hache d'emeraude
+SANDSTONE COAL ORE,Sandstone coal ore,Minerai de charbon de gres
+SANDSTONE IRON ORE,Sandstone iron ore,Minerai de fer en gres
+SANDSTONE RUBY ORE,Sandstone ruby ore,Minerai de rubis de gres
+SANDSTONE SAPPHIRE ORE,Sandstone sapphire ore,Minerai de saphir de gres
+SANDSTONE EMERALD ORE,Sandstone emerald ore,Minerai d'emeraude de gres
+SANDSTONE ELECTRITIUM ORE,Sandstone electritium ore,Minerai d'electritium de gres
+BIRCH LOG,Birch log,Buche de bouleau
+POPLAR LOG,Poplar log,Buche de peuplier
+OAK PLANKS,Oak planks,Planches de chene
+PINE PLANKS,Pine planks,Planches de pin
+BIRCH PLANKS,Birch planks,Planches de bouleau
+POPLAR PLANKS,Poplar planks,Planches de peuplier
+STICKS,Sticks,Batons
+STONE BRICKS,Stone bricks,Briques de pierre
+SANDSTONE BRICKS,Sandstone bricks,Briques de gres
+WOOD PARTICLES,Wood particles,Particules de bois
+COAL,Coal,Charbon
+IRON PARTICULES,Iron particles,Particules de fer
+RUBY,Ruby,Rubis
+SAPPHIRE,Sapphire,Saphir
+EMERALD,Emerald,emeraude
+ELECTRITIUM,Electritium,Electritium
+COAL BLOCK,Coal block,Bloc de charbon
+IRON BLOCK,Iron block,Bloc de fer
+RUBY BLOCK,Ruby block,Bloc de rubis
+SAPPHIRE BLOCK,Sapphire block,Bloc saphir
+EMERALD BLOCK,Emerald block,Bloc d'emeraude
+CONVEYOR BELT,Conveyor belt,Bande transporteuse
+ROPE,Rope,Corde
+PARACHUTE,Parachute,Parachute
+STRINGS,Strings,Cordes
+JETPACK,Jetpack,Jetpack
+WOOL,Wool,Laine
+HAMMER,Hammer,Marteau
+CLOCK,Clock,Horloge
+FOOD,Food,Nourriture
+ZOMBIE BONE,Zombie bone,Os de zombie
+HONEY,Honey,Miel
+BACKPACK,Backpack,Sac a dos
+BUCKET,Bucket,Seau
+WATER BUCKET,Water bucket,Seau d'eau
+CLAY BLOCK,Clay block,Bloc d'argile
+FURNACE,Furnace,Fourneau
+IRON INGOT,Iron ingot,Lingot de fer
+ANVIL,Anvil,Enclume
+CAULDRON,Cauldron,Chaudron
+CHISEL BLOCK,Chisel block,Bloc de ciseau
+CLAY BRICKS,Clay bricks,Briques d'argile
+VOID PARTICLES,Void particles,Particules de vide
+EMPTY POTION,Empty potion,Potion vide
+PIECE OF GLASS,Piece of glass,Morceau de verre
+HEALTH POTION,Health potion,Potion de sante
+FORCE POTION,Force potion,Potion de force
+WOODEN SWORD,Wooden sword,Epee en bois
+STONE SWORD,Stone sword,Epee en pierre
+IRON SWORD,Iron sword,epee en fer
+RUBY SWORD,Ruby sword,epee en rubis
+SAPPHIRE SWORD,Sapphire sword,epee de saphir
+EMERALD SWORD,Emerald sword,epee d'emeraude
+STONE TILES,Stone tiles,Carreaux de pierre
+SMOOTH STONE,Smooth stone,Pierre lisse
+SANDSTONE TILES,Sandstone tiles,Carreaux de gres
+SMOOTH SANDSTONE,Smooth sandstone,Gres lisse
+SHADED GRASS,Shaded grass,Herbe ombragee
+SHADED DIRT,Shaded dirt,Terre ombragee
+SHADED STONE,Shaded stone,Pierre ombragee
+SHADED PORTAL,Shaded portal,Portail ombrage
+SHADED LOG,Shaded log,Buche ombragee
+SHADED BOSS PIEDESTAL,Shaded boss piedestal,Piedestal de patron ombrage
+GRASS,Grass,Herbe
+BEEHIVE,Beehive,Ruche
+GLASS BLOCK,Glass block,Bloc de verre
+STRUCTURE AIR,Structure aie,Structure aie
+SHADED STONE BRICKS,Shaded stone bricks,Briques en pierre ombragee
+SHADED STONE TILES,Shaded stone tiles,Dalles en pierre ombragee
+SMOOTH SHADED STONE,Smooth shaded stone,Pierre ombree lisse
+BACKPACK,Backpack,Sac à dos
+OAK DOOR,OAK DOOR,PORTE EN CHENE
+PINE DOOR,PINE DOOR,PORTE EN PIN
+BIRCH DOOR,BIRCH DOOR,PORTE EN BOULEAU
+POPLAR DOOR,POPLAR DOOR,PORTE EN PEUPLIER
+SHADED DOOR,SHADED DOOR,PORTE OMBRAGÉE
+CLOSED OAK DOOR,CLOSED OAK DOOR,PORTE FERMEE EN CHENE
+CLOSED PINE DOOR,CLOSED PINE DOOR,PORTE FERMEE EN PIN
+CLOSED BIRCH DOOR,CLOSED BIRCH DOOR,PORTE FERMEE EN BOULEAU
+CLOSED POPLAR DOOR,CLOSED POPLAR DOOR,PORTE FERMEE EN PEUPLIER
+CLOSED SHADED DOOR,CLOSED SHADED DOOR,PORTE FERMEE À L'OMBRE
+TORCH,TORCH,TORCH
+CHEST,CHEST,CHEST
+MOB SPAWNER (EMPTY),MOB SPAWNER (EMPTY),BLOC D’APPARITION (VIDE)
+MOB SPAWNER (SHEEP),MOB SPAWNER (SHEEP),BLOC D’APPARITION (MOUTON)
+MOB SPAWNER (ZOMBIE),MOB SPAWNER (ZOMBIE),BLOC D’APPARITION (ZOMBIE)
+MOB SPAWNER (BEE),MOB SPAWNER (BEE),BLOC D’APPARITION (ABEILLE)
+LUMINOUS SHADED STONE,LUMINOUS SHADED STONE,PIERRE OMBRAGEE LUMINEUSE
+SPEED BREAKING POTION,SPEED BREAKING POTION,POTION DE VITESSE DE CASSE
+NON ATTRACTION POTION,NON ATTRACTION POTION,POTION DE NON ATTRACTION
+JUMP POTION,JUMP POTION,POTION DE SAUT
+SPEED POTION,SPEED POTION,POTION DE VITESSE
+NIGHT VISION POTION,NIGHT VISION POTION,POTION VISION NOCTURNE
+FORTUNE POTION,FORTUNE POTION,POTION FORTUNE
+RANGE POTION,RANGE POTION,POTION DE PORTEE
+STAT_WALK,Walk distance (blocks),Distance de marche (blocs)
+STAT_JUMP,Number of jumps,Nombre de sauts
+STAT_SPRINT,Sprint distance (blocks),Distance de sprint (blocs)
+STAT_DAMAGE_INFLICTED,Damages inflicted,Dommages infliges
+STAT_DAMAGE_RECEIVED,Damages received,Dommages reçus
+STAT_ITEMS,Items colected,Objets collectes
+STAT_MOBS_KILLED,Mobs killed,Mobs tues
+STAT_DEATHS,Number of deaths,Nombre de morts
+STAT_BLOCKS_BROKEN,Blocks broken,Blocs casses
+STAT_BLOCKS_PLACED,Blocks placed,Blocs places
+STAT_FOOD_EATEN,Foods eaten,Aliments manges
+STAT_FLIGHT,Flight distance (blocks),Distance de vol (blocs)
+CHEAT MENU,Cheat menu,Menu de triche
+CRAFT MENU,Assemble menu,Menu Assemblage
+DEAD,You are dead,Vous etes mort
+RESPAWN,Respawn,Respawn
+DEAD_CAUSE1,If only you had wings to keep from falling like a moron …,Si seulement tu avais des ailes pour ne pas tomber comme un cretin ...
+SOFT CRAFT MENU,Soft assemble menu,Menu d'assemblage doux
+BIOMES,Biomes,Biomes
+ALL BIOMES,All biomes,Tous les biomes
+PLAINS,Plains,Plaines
+DESERT,Desert,Desert
+COLD PLAINS,Cold plains,Plaines froides
+BIRCH FOREST,Birch forest,Foret de bouleaux
+RIPARIAN FOREST,Riparian forest,Foret riveraine
+ACHIEVEMENT_TITLE_LAUNCHED,You’ve launched the game !,Vous avez lance le jeu !
+ACHIEVEMENT_TITLE_DESTROYER,Impulsive destroyer,Destructeur impulsif
+ACHIEVEMENT_TITLE_MOBS,It’s really not very nice,C'est vraiment pas tres sympa
+ACHIEVEMENT_TITLE_FINANCIALLY1,Financially comfortable I,A l'aise financierement I
+ACHIEVEMENT_TITLE_FINANCIALLY2,Financially comfortable II,A l'aise financierement II
+ACHIEVEMENT_TITLE_FINANCIALLY3,Financially comfortable II,A l'aise financierement II
+ACHIEVEMENT_TITLE_FINANCIALLY4,Financially comfortable IV,A l'aise financierement IV
+ACHIEVEMENT_TITLE_FINANCIALLY5,Financially comfortable V,A l'aise financierement V
+ACHIEVEMENT_TITLE_THOR,Mighty as thor,Puissant comme Thor
+ACHIEVEMENT_TITLE_OVERPOWERED_PICK,Overpowered pickaxe,Pioche surpuissante
+ACHIEVEMENT_TITLE_OVERPOWERED_SHOVEL,Overpowered shovel,Pelle surpuissante
+ACHIEVEMENT_TITLE_OVERPOWERED_AXE,Overpowered axe,Hache surpuissante
+ACHIEVEMENT_TITLE_TRANSPORT,Public transports,Transports publics
+ACHIEVEMENT_TITLE_JETPACK,Immediate boarding,Embarquement immediat
+ACHIEVEMENT_TITLE_PARACHUTE,Like a bird,Comme un oiseau
+ACHIEVEMENT_TITLE_ALL,Congratulations,Felicitations
+ACHIEVEMENT_TITLE_CHANGE_DIMENSION,Change of air,Changement d’air
+ACHIEVEMENT_TITLE_TITLE_BOSS,You are the boss,Vous etes le boss
+ACHIEVEMENT_TITLE_TITLE_ALLBIOMES,Explorer of the extreme,Exploreur de l’extreme
+ACHIEVEMENT_TITLE_POSETORCH,It's bright!,C’est lumineux !
+ACHIEVEMENT_TITLE_10DAYS,Logbook...,Journal de bord…
+ACHIEVEMENT_TITLE_ALLPOTIONS,Barman pro,Barman pro
+ACHIEVEMENT_TITLE_CHISELED100,Decorator,Decorateur
+ACHIEVEMENT_TITLE_OPENCHEST,No more seats!,Plus de places !
+ACHIEVEMENT_DESC_LAUNCHED,Break a block on the game,Casser un bloc sur le jeu
+ACHIEVEMENT_DESC_DESTROYER,"Break 25,000 Blocks",Casser 25 000 blocs
+ACHIEVEMENT_DESC_MOBS,Kill 100 Entities in total,Tuer 100 Entites au total
+ACHIEVEMENT_DESC_FINANCIALLY1,Assemble 25 Coal Blocks,Assembler 25 Blocs de charbon
+ACHIEVEMENT_DESC_FINANCIALLY2,Assemble 25 Iron Blocks in total,Assemblez 25 blocs de fer au total
+ACHIEVEMENT_DESC_FINANCIALLY3,Assemble 25 Ruby Blocks,Assembler 25 blocs de rubis
+ACHIEVEMENT_DESC_FINANCIALLY4,Assemble 25 total sapphire blocks,Assembler 25 blocs de saphir au total
+ACHIEVEMENT_DESC_FINANCIALLY5,Assemble 25 total emerald blocks,Assembler 25 blocs d'emeraude au total
+ACHIEVEMENT_DESC_THOR,Assemble a hammer,Assembler un marteau
+ACHIEVEMENT_DESC_OVERPOWERED_PICK,Assemble the best pickaxe in the game,Assemble la meilleure pioche du jeu
+ACHIEVEMENT_DESC_OVERPOWERED_SHOVEL,Assemble the best shovel in the game,Assemble la meilleure pelle du jeu
+ACHIEVEMENT_DESC_OVERPOWERED_AXE,Assemble the best game axe ,Assemblez la meilleure hache du jeu 
+ACHIEVEMENT_DESC_TRANSPORT,Let be embarked with conveyor belts on 1000 blocks,Fais-toi embarquer avec des tapis roulants sur 1000 blocs
+ACHIEVEMENT_DESC_JETPACK,Fly with a jetpack,Vole avec un jetpack
+ACHIEVEMENT_DESC_PARACHUTE,Plan with your parachute,Planifiez avec votre parachute
+ACHIEVEMENT_DESC_ALL,Obtain all achievements in the game,Obtenir tous les succes du jeu
+ACHIEVEMENT_DESC_CHANGE_DIMENSION,Change dimension at least once,Changer au moins 1 fois de dimension
+ACHIEVEMENT_DESC_BOSS,Beat the boss of the game in the Shadow dimension,Battre le boss du jeu dans la dimension Shadow
+ACHIEVEMENT_DESC_ALLBIOMES,Discover all the biomes of the game,Decouvrir tous les biomes du jeu
+ACHIEVEMENT_DESC_POSETORCH,Place a torch,Poser une torche
+ACHIEVEMENT_DESC_10DAYS,Play for 10 days in the game,Jouer pendant 10 jours dans le jeu
+ACHIEVEMENT_DESC_ALLPOTIONS,Open a chest,Ouvrir un coffre
+ACHIEVEMENT_DESC_CHISELED100,Chisel at least 100 blocks,Chiseler au moins 100 blocs
+ACHIEVEMENT_DESC_OPENCHEST,Open a chest,Ouvrir un coffre
+LANGUAGES,Languages,Langues
+CHOOSE LANGUAGE,Choose a langage,Choisissez une langue
+CONTROLS,Controls,Controles
+ui_e,Interface,Interface
+ui_chat,Chat,Chat
+ui_up,Up,Haut
+ui_down,Down,Bas
+ui_left,Left,Gauche
+ui_right,Right,Droite
+ui_f3,Debug menu,Menu de debugage
+ui_drop,Drop,Jeter
+ui_ctrl,Sprint,Courrir
+ui_cancel,Pause menu,Menu de pause
+TYPE A MESSAGE…,TYPE A MESSAGE…,"ECRIVEZ UN MESSAGE,,,"
+,,
+,,
+,,
+,,
+ENGLISH,English,Anglais
+FRENCH,French,Français
+,,
+,,
+,,Traduit avec www.DeepL.com/Translator (version gratuite)
