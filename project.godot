@@ -15,7 +15,7 @@ config/description="Platform Master"
 run/main_scene="res://Scènes/Menu.tscn"
 config/features=PackedStringArray("4.1")
 boot_splash/bg_color=Color(0, 0, 0, 1)
-boot_splash/image="res://new_logo.png"
+boot_splash/image="res://Textures/new_logo.png"
 boot_splash/fullsize=false
 boot_splash/use_filter=false
 config/icon="res://logo.png"
@@ -23,13 +23,12 @@ config/windows_native_icon="res://logo.ico"
 
 [autoload]
 
-noise="res://softnoise.gd"
 VarGlobales="*res://Scripts/VarGlobales.gd"
-MusicController="*res://Scènes/MusicController.tscn"
-Network="*res://Network.gd"
-Global="*res://Global.gd"
 PersistentNodes="*res://Scènes/Persistent_nodes.tscn"
-Generation="*res://generation.gd"
+Global="*res://Scripts/Global.gd"
+Generation="*res://Scripts/generation.gd"
+noise="*res://Scripts/softnoise.gd"
+MusicController="*res://Scènes/MusicController.tscn"
 
 [display]
 

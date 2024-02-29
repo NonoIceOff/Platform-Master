@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cks20nws84c0s"]
 
-[ext_resource type="Texture2D" uid="uid://dwpr8avdgxtn1" path="res://Textures/Blocks/snowy_grass.png" id="1"]
-[ext_resource type="Shape2D" path="res://new_rectangleshape2d.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://brl3nlsnhcwwy" path="res://Textures/Blocks/snowy_grass.png" id="1"]
+[ext_resource type="Shape2D" path="res://Ressources/new_rectangleshape2d.tres" id="2"]
 [ext_resource type="Script" path="res://Scripts/Item.gd" id="3"]
 [ext_resource type="Script" path="res://Scripts/Area2DItem.gd" id="4"]
 
