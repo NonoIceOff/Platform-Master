@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://b7vhv4j7t5yio"
+uid="uid://c01o76rkjm5tq"
 path="res://.godot/imported/absender1.ttf-1fb8623b78526576920d4a67272ee172.fontdata"
 
 [deps]
@@ -16,24 +16,18 @@ Rendering=null
 antialiasing=1
 generate_mipmaps=false
 multichannel_signed_distance_field=false
-msdf_pixel_range=1
+msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
-hinting=2
+hinting=1
 subpixel_positioning=1
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]
 Compress=null
 compress=true
-preload=[{
-"chars": [],
-"glyphs": [],
-"name": "New Configuration",
-"size": Vector2i(16, 0),
-"variation_embolden": 0.0
-}]
+preload=[]
 language_support={}
 script_support={}
 opentype_features={}

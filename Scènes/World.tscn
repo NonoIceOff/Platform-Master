@@ -1,65 +1,62 @@
-[gd_scene load_steps=67 format=3 uid="uid://dl640mkvh2ss1"]
+[gd_scene load_steps=64 format=3 uid="uid://dl640mkvh2ss1"]
 
 [ext_resource type="FontFile" path="res://Themes/basic.tres" id="1"]
-[ext_resource type="Theme" uid="uid://cevidcpcvdp7q" path="res://Themes/new_theme.tres" id="2"]
-[ext_resource type="SpriteFrames" path="res://Player_Anim.tres" id="3"]
-[ext_resource type="Texture2D" uid="uid://co4qjeoiase5d" path="res://Textures/Blocks/dirt.png" id="4"]
-[ext_resource type="Script" path="res://Scènes/Moon.gd" id="5_0is26"]
-[ext_resource type="TileSet" uid="uid://dnn40ff1ikv57" path="res://tileset_placement.tres" id="5_brlyo"]
+[ext_resource type="SpriteFrames" path="res://Ressources/Player_Anim.tres" id="3"]
+[ext_resource type="Texture2D" uid="uid://cvlkelui5upvr" path="res://Textures/Blocks/dirt.png" id="4"]
+[ext_resource type="Script" path="res://Scripts/Moon.gd" id="5_0is26"]
 [ext_resource type="TileSet" uid="uid://bd6qw7g8wdruo" path="res://Tilesets/blocs_tileset.tres" id="6"]
-[ext_resource type="Texture2D" uid="uid://buoql2liapa7n" path="res://all_breaks.png" id="6_5gjhe"]
+[ext_resource type="Texture2D" uid="uid://dm4tuyfh5etub" path="res://Textures/all_breaks.png" id="6_5gjhe"]
 [ext_resource type="Script" path="res://Scripts/CanvasLayer.gd" id="7"]
 [ext_resource type="Script" path="res://Scripts/KinematicBody2D.gd" id="8"]
 [ext_resource type="Script" path="res://Scripts/cursor_slot.gd" id="9"]
-[ext_resource type="Texture2D" uid="uid://c7sgu7oxa5fxx" path="res://Textures/Biome/snowy_plains.png" id="9_eduh0"]
+[ext_resource type="Texture2D" uid="uid://cbgunx0i16n6q" path="res://Textures/Biome/snowy_plains.png" id="9_eduh0"]
 [ext_resource type="Script" path="res://Scripts/CanvasLayer_GUI.gd" id="10"]
 [ext_resource type="Script" path="res://Scripts/Camera2D.gd" id="11"]
-[ext_resource type="Shape2D" path="res://PlayerCollision.tres" id="12"]
+[ext_resource type="Shape2D" path="res://Ressources/PlayerCollision.tres" id="12"]
 [ext_resource type="Script" path="res://Scripts/Buttons.gd" id="13"]
-[ext_resource type="Texture2D" uid="uid://befoh6exixggr" path="res://Textures/Blocks/stone.png" id="14"]
-[ext_resource type="Script" path="res://Scènes/ParallaxBackground.gd" id="15"]
-[ext_resource type="Script" path="res://Scènes/Chat.gd" id="16"]
-[ext_resource type="Texture2D" uid="uid://ba3dq1u4qgeoa" path="res://Textures/white.png" id="17"]
-[ext_resource type="Material" uid="uid://db1fy53axbpso" path="res://shaderflou.tres" id="18"]
-[ext_resource type="Texture2D" uid="uid://b3hy7250t7cfh" path="res://Textures/inv_slot_selected.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://v4qfvtes76ml" path="res://Textures/Blocks/stone.png" id="14"]
+[ext_resource type="Script" path="res://Scripts/ParallaxBackground.gd" id="15"]
+[ext_resource type="Script" path="res://Scripts/Chat.gd" id="16"]
+[ext_resource type="Texture2D" uid="uid://d2utnybu8q5w5" path="res://Textures/white.png" id="17"]
+[ext_resource type="Material" uid="uid://db1fy53axbpso" path="res://Ressources/shaderflou.tres" id="18"]
+[ext_resource type="Texture2D" uid="uid://vfncwjxdp0sn" path="res://Textures/inv_slot_selected.png" id="19"]
 [ext_resource type="Script" path="res://Scripts/World.gd" id="20"]
-[ext_resource type="Texture2D" uid="uid://c2bnldw68yyut" path="res://Textures/heart_broken_bar.png" id="21"]
-[ext_resource type="Texture2D" uid="uid://cw3ltvdsykh2h" path="res://Textures/heart_bar.png" id="22"]
-[ext_resource type="Texture2D" uid="uid://cp6accetq3ysc" path="res://Textures/no_food_bar.png" id="23"]
-[ext_resource type="Texture2D" uid="uid://gmxn24ab28jh" path="res://Textures/food_bar.png" id="24"]
-[ext_resource type="Texture2D" uid="uid://cudxrsd3gbggf" path="res://Textures/food_saturation_bar.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://c78r0vk44s3w0" path="res://Textures/heart_broken_bar.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://b38hwwdt5cvdt" path="res://Textures/heart_bar.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://bvpykb2uabg0t" path="res://Textures/no_food_bar.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://cqj26fw8ydqjg" path="res://Textures/food_bar.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://cipel33xxp1ox" path="res://Textures/food_saturation_bar.png" id="25"]
 [ext_resource type="Script" path="res://Scripts/StatsPlayer.gd" id="26"]
-[ext_resource type="Texture2D" uid="uid://dqcxlj42piccj" path="res://Textures/Items/void_ingot.png" id="27"]
-[ext_resource type="Texture2D" uid="uid://c6jj8tw3lsg2x" path="res://Textures/Items/stick.png" id="28"]
-[ext_resource type="PackedScene" path="res://Achievement_Info.tscn" id="30"]
-[ext_resource type="Texture2D" uid="uid://xfbq16bo2s1v" path="res://Textures/Mobile/chest.png" id="34"]
-[ext_resource type="Texture2D" uid="uid://57trdtemb83p" path="res://Textures/Items/parachute.png" id="35"]
-[ext_resource type="Texture2D" uid="uid://5q5tm48do46j" path="res://Textures/Items/attached_jetpack.png" id="36"]
-[ext_resource type="Texture2D" uid="uid://cgk4xqshbigiw" path="res://Textures/inv_slot.png" id="37"]
-[ext_resource type="Texture2D" uid="uid://dw41mu0cxijmv" path="res://Textures/Blocks/coal_block.png" id="38"]
-[ext_resource type="Texture2D" uid="uid://bblau2xu2ub2m" path="res://Textures/jetpack_frame.png" id="39"]
-[ext_resource type="Texture2D" uid="uid://bwt0lcmgyqcsk" path="res://Textures/Blocks/snow.png" id="40"]
-[ext_resource type="Texture2D" uid="uid://cccuo6eh8vyrq" path="res://Textures/Mobile/pause.png" id="41"]
-[ext_resource type="Texture2D" uid="uid://cvq2k8cveygtc" path="res://Textures/Mobile/x.png" id="42"]
-[ext_resource type="Texture2D" uid="uid://fwm6s5te6s18" path="res://Textures/Mobile/pose.png" id="43"]
-[ext_resource type="Texture2D" uid="uid://cerfghgs4omse" path="res://Textures/Blocks/grass_block.png" id="44"]
-[ext_resource type="Texture2D" uid="uid://cvm5wkxv6tmy" path="res://Textures/Blocks/pine_planks.png" id="45"]
-[ext_resource type="Texture2D" uid="uid://jvq80liq3rsr" path="res://Textures/Items/crown.png" id="46"]
-[ext_resource type="Texture2D" uid="uid://da4ppdhm8jejv" path="res://Textures/bossbar_break.png" id="47"]
-[ext_resource type="Texture2D" uid="uid://qb7xuj6o4ksn" path="res://Textures/bossbar.png" id="48"]
-[ext_resource type="SpriteFrames" path="res://HairFrames.tres" id="50"]
-[ext_resource type="Texture2D" uid="uid://ddokrqkdj4lyn" path="res://Textures/Personnage/Shirt/player.png" id="51"]
-[ext_resource type="Texture2D" uid="uid://cmmkcrhmlh0l8" path="res://Textures/Personnage/Heads/1.png" id="52"]
-[ext_resource type="Texture2D" uid="uid://da8ut0srb0csi" path="res://Textures/sun.png" id="52_5ms4u"]
-[ext_resource type="Texture2D" uid="uid://bosxm86lg4q2s" path="res://Textures/Personnage/Legs/Legs.png" id="53"]
-[ext_resource type="Script" path="res://Scènes/Sun.gd" id="53_7kphi"]
-[ext_resource type="PackedScene" path="res://Slot_Info.tscn" id="54"]
-[ext_resource type="Texture2D" uid="uid://d1nhlg6iy3us3" path="res://Textures/Items/backpack.png" id="55"]
-[ext_resource type="Texture2D" uid="uid://41hd71v4phn1" path="res://Textures/moon.png" id="55_17ytm"]
-[ext_resource type="Texture2D" uid="uid://dcme2nr2lp5qu" path="res://Textures/Blocks/assembly_table.png" id="56"]
-[ext_resource type="Texture2D" uid="uid://l4e7isoriift" path="res://Textures/Icons/settings_icon.png" id="57"]
-[ext_resource type="Texture2D" uid="uid://prh2bj1hqu6w" path="res://Textures/Blocks/oak_sign.png" id="58"]
-[ext_resource type="Theme" uid="uid://b7mjswntukbu2" path="res://Themes/black_and_white_theme.tres" id="59"]
+[ext_resource type="Texture2D" uid="uid://1n0x8rvg6m2m" path="res://Textures/Items/void_ingot.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://dj1wrp6u2kl7o" path="res://Textures/Items/stick.png" id="28"]
+[ext_resource type="PackedScene" uid="uid://cd0yy31v0dflf" path="res://Scènes/Achievement_Info.tscn" id="30"]
+[ext_resource type="Texture2D" uid="uid://jmhfov6f6kjt" path="res://Textures/Mobile/chest.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://cjkgfmniyv08u" path="res://Textures/Items/parachute.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://cpujlo0ctqa6s" path="res://Textures/Items/attached_jetpack.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://bdh41uu0y2enw" path="res://Textures/inv_slot.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://x173dnkuts0a" path="res://Textures/Blocks/coal_block.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://c3j3cujpigq5k" path="res://Textures/jetpack_frame.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://bt50x5vqrqe84" path="res://Textures/Blocks/snow.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://b0rof6wq2ibll" path="res://Textures/Mobile/pause.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://ds28n57pvlqj4" path="res://Textures/Mobile/x.png" id="42"]
+[ext_resource type="Texture2D" uid="uid://kvu0ho86c4g" path="res://Textures/Mobile/pose.png" id="43"]
+[ext_resource type="Texture2D" uid="uid://c7pavuw8am8rb" path="res://Textures/Blocks/grass_block.png" id="44"]
+[ext_resource type="Texture2D" uid="uid://d3b6vuxiijdn4" path="res://Textures/Blocks/pine_planks.png" id="45"]
+[ext_resource type="Texture2D" uid="uid://b3qpokcwha58q" path="res://Textures/Items/crown.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://dsbe62ucoeu54" path="res://Textures/bossbar_break.png" id="47"]
+[ext_resource type="Texture2D" uid="uid://dhauef0um1mvo" path="res://Textures/bossbar.png" id="48"]
+[ext_resource type="SpriteFrames" path="res://Ressources/HairFrames.tres" id="50"]
+[ext_resource type="Texture2D" uid="uid://dpoj3e2tsu0ei" path="res://Textures/Personnage/Shirt/player.png" id="51"]
+[ext_resource type="Texture2D" uid="uid://fuat23nbnegg" path="res://Textures/Personnage/Heads/1.png" id="52"]
+[ext_resource type="Texture2D" uid="uid://bvx8m4f3p7wyc" path="res://Textures/sun.png" id="52_5ms4u"]
+[ext_resource type="Texture2D" uid="uid://beppkm6k63tw8" path="res://Textures/Personnage/Legs/Legs.png" id="53"]
+[ext_resource type="Script" path="res://Scripts/Sun.gd" id="53_7kphi"]
+[ext_resource type="PackedScene" uid="uid://ki05hecams0e" path="res://Scènes/Slot_Info.tscn" id="54"]
+[ext_resource type="Texture2D" uid="uid://dljpndhfp5auk" path="res://Textures/Items/backpack.png" id="55"]
+[ext_resource type="Texture2D" uid="uid://cevg0dlt3dfhk" path="res://Textures/moon.png" id="55_17ytm"]
+[ext_resource type="Texture2D" uid="uid://qlag0h3r5v3m" path="res://Textures/Blocks/assembly_table.png" id="56"]
+[ext_resource type="Texture2D" uid="uid://ci0sx5kmf316m" path="res://Textures/Icons/settings_icon.png" id="57"]
+[ext_resource type="Texture2D" uid="uid://crpjbkso2la2n" path="res://Textures/Blocks/oak_sign.png" id="58"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x3u16"]
 texture = ExtResource("6_5gjhe")
@@ -275,7 +272,7 @@ texture = ExtResource("17")
 [node name="TileMapPlacement" type="TileMap" parent="."]
 modulate = Color(1, 1, 1, 0.392157)
 position = Vector2(1, -1)
-tile_set = ExtResource("5_brlyo")
+tile_set = ExtResource("6")
 cell_quadrant_size = 32
 format = 2
 
@@ -400,7 +397,6 @@ offset_top = -57.7778
 offset_right = 213.444
 offset_bottom = -38.7778
 scale = Vector2(0.7, 0.7)
-theme = ExtResource("2")
 theme_override_fonts/font = ExtResource("1")
 
 [node name="Crown" type="Sprite2D" parent="CharacterBody2D"]
@@ -917,7 +913,6 @@ offset_top = 9.0
 offset_right = 43.0
 offset_bottom = 28.0
 scale = Vector2(0.7, 0.7)
-theme = ExtResource("2")
 theme_override_fonts/font = ExtResource("1")
 
 [node name="Button_jetpack" type="Button" parent="CanvasLayer_GUI/InventoryGUI/test/armor_jetpack"]
@@ -1099,7 +1094,6 @@ offset_top = 8.5
 offset_right = 30.5
 offset_bottom = 19.5
 scale = Vector2(0.7, 0.7)
-theme = ExtResource("2")
 theme_override_fonts/font = ExtResource("1")
 
 [node name="Button1_backpack" type="Button" parent="CanvasLayer_GUI/BackPackGUI/test/backpack1"]
@@ -1127,7 +1121,6 @@ offset_top = 8.5
 offset_right = 30.5
 offset_bottom = 19.5
 scale = Vector2(0.7, 0.7)
-theme = ExtResource("2")
 theme_override_fonts/font = ExtResource("1")
 
 [node name="Button2_backpack" type="Button" parent="CanvasLayer_GUI/BackPackGUI/test/backpack2"]
@@ -1155,7 +1148,6 @@ offset_top = 8.5
 offset_right = 30.5
 offset_bottom = 19.5
 scale = Vector2(0.7, 0.7)
-theme = ExtResource("2")
 theme_override_fonts/font = ExtResource("1")
 
 [node name="Button3_backpack" type="Button" parent="CanvasLayer_GUI/BackPackGUI/test/backpack3"]
@@ -1183,7 +1175,6 @@ offset_top = 8.5
 offset_right = 30.5
 offset_bottom = 19.5
 scale = Vector2(0.7, 0.7)
-theme = ExtResource("2")
 theme_override_fonts/font = ExtResource("1")
 
 [node name="Button4_backpack" type="Button" parent="CanvasLayer_GUI/BackPackGUI/test/backpack4"]
@@ -1211,7 +1202,6 @@ offset_top = 8.5
 offset_right = 30.5
 offset_bottom = 19.5
 scale = Vector2(0.7, 0.7)
-theme = ExtResource("2")
 theme_override_fonts/font = ExtResource("1")
 
 [node name="Button5_backpack" type="Button" parent="CanvasLayer_GUI/BackPackGUI/test/backpack5"]
@@ -1239,7 +1229,6 @@ offset_top = 8.5
 offset_right = 30.5
 offset_bottom = 19.5
 scale = Vector2(0.7, 0.7)
-theme = ExtResource("2")
 theme_override_fonts/font = ExtResource("1")
 
 [node name="Button6_backpack" type="Button" parent="CanvasLayer_GUI/BackPackGUI/test/backpack6"]
@@ -1267,7 +1256,6 @@ offset_top = 8.5
 offset_right = 30.5
 offset_bottom = 19.5
 scale = Vector2(0.7, 0.7)
-theme = ExtResource("2")
 theme_override_fonts/font = ExtResource("1")
 
 [node name="Button7_backpack" type="Button" parent="CanvasLayer_GUI/BackPackGUI/test/backpack7"]
@@ -1295,7 +1283,6 @@ offset_top = 8.5
 offset_right = 30.5
 offset_bottom = 19.5
 scale = Vector2(0.7, 0.7)
-theme = ExtResource("2")
 theme_override_fonts/font = ExtResource("1")
 
 [node name="Button8_backpack" type="Button" parent="CanvasLayer_GUI/BackPackGUI/test/backpack8"]
@@ -1515,7 +1502,6 @@ offset_top = 9.0
 offset_right = 43.0
 offset_bottom = 28.0
 scale = Vector2(0.7, 0.7)
-theme = ExtResource("2")
 theme_override_fonts/font = ExtResource("1")
 
 [node name="Button_chisel" type="Button" parent="CanvasLayer_GUI/ChiselGUI/PanelPrincipal/chisel_slot"]
@@ -1641,7 +1627,6 @@ offset_top = 476.0
 offset_right = 640.0
 offset_bottom = 600.0
 scale = Vector2(2, 2)
-theme = ExtResource("59")
 theme_override_colors/background_color = Color(0, 0, 0, 0)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/selection_color = Color(1, 0, 1, 1)
@@ -1734,7 +1719,6 @@ offset_bottom = 676.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 2
-theme = ExtResource("2")
 alignment = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/ChatBox"]
@@ -1755,7 +1739,6 @@ offset_left = -9.0
 offset_top = 2.0
 offset_right = 14.0
 offset_bottom = 13.0
-theme = ExtResource("2")
 theme_override_fonts/font = ExtResource("1")
 
 [node name="NameItem" type="Label" parent="CanvasLayer"]
@@ -1766,7 +1749,6 @@ offset_right = 928.0
 offset_bottom = 52.0
 scale = Vector2(2, 2)
 mouse_filter = 1
-theme = ExtResource("2")
 theme_override_colors/font_shadow_color = Color(0.392157, 0.392157, 0.392157, 1)
 theme_override_constants/shadow_offset_y = 1
 theme_override_fonts/font = ExtResource("1")
@@ -1779,7 +1761,6 @@ offset_top = 4.0
 offset_right = 179.0
 offset_bottom = 23.0
 mouse_filter = 1
-theme = ExtResource("2")
 theme_override_colors/font_shadow_color = Color(0.392157, 0.392157, 0.392157, 1)
 theme_override_constants/shadow_offset_y = 1
 theme_override_fonts/font = ExtResource("1")
@@ -1794,7 +1775,6 @@ offset_right = 1268.0
 offset_bottom = -8.0
 focus_mode = 0
 mouse_filter = 1
-theme = ExtResource("2")
 theme_override_fonts/font = ExtResource("1")
 text = "FLY MODE"
 
@@ -1874,7 +1854,6 @@ offset_top = 4.0
 offset_right = 1212.0
 offset_bottom = 28.0
 mouse_filter = 1
-theme = ExtResource("2")
 show_percentage = false
 
 [node name="Label" type="Label" parent="CanvasLayer/SaveRect/ColorRect"]

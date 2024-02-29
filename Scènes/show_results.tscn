@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://702p0psfx0mm"]
+[gd_scene load_steps=6 format=3 uid="uid://dd6au04jbeddt"]
 
-[ext_resource type="Script" path="res://show_results.gd" id="1_j0y65"]
+[ext_resource type="Script" path="res://Scripts/show_results.gd" id="1_d625b"]
 [ext_resource type="Theme" uid="uid://cevidcpcvdp7q" path="res://Themes/new_theme.tres" id="1_vr66f"]
 [ext_resource type="Texture2D" uid="uid://6vmf83apjw2v" path="res://Textures/Blocks/clay_bricks.png" id="2_arcq5"]
 
@@ -21,7 +21,7 @@ offset_top = -18.0
 offset_right = 13.0
 offset_bottom = 14.0
 scale = Vector2(0.75, 0.75)
-script = ExtResource("1_j0y65")
+script = ExtResource("1_d625b")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 layout_mode = 0

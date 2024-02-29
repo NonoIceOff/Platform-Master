@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd0yy31v0dflf"]
+
+[ext_resource type="Texture2D" uid="uid://o57o6i51iwgq" path="res://Textures/Items/iron_sword.png" id="1"]
+[ext_resource type="Script" path="res://Scripts/Achievement_Info.gd" id="1_514bf"]
+
+[node name="Achievement_Info" type="ColorRect"]
+offset_right = 452.0
+offset_bottom = 60.0
+color = Color(1, 0, 1, 1)
+script = ExtResource("1_514bf")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 448.0
+offset_bottom = 56.0
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 4.0
+offset_right = 252.0
+offset_bottom = 16.0
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "achievement_title"
+
+[node name="Description" type="Label" parent="."]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 28.0
+offset_right = 252.0
+offset_bottom = 40.0
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(0.65098, 0.00392157, 0.65098, 1)
+text = "achievement_description"
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(28, 28)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1")
