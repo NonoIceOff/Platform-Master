@@ -9,4 +9,4 @@ Bienvenue dans le projet Platform Master basé sur Godot Engine 4.1.3.
 
 1. git clone le projet
 2. Ouvrez Godot 4.1.3 en important le projet
-3. Alez dans Projet -> Recharger le projet actuel
+3. Allez dans Projet -> Recharger le projet actuel
