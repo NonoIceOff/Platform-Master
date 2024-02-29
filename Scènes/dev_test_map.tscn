@@ -1,11 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://s522lj7opx7u"]
 
+[ext_resource type="Script" path="res://Scripts/dev_test_map.gd" id="1_4exok"]
 [ext_resource type="TileSet" uid="uid://bd6qw7g8wdruo" path="res://Tilesets/blocs_tileset.tres" id="1_87ob4"]
-[ext_resource type="Script" path="res://Scènes/dev_test_map.gd" id="1_te0xk"]
-[ext_resource type="Script" path="res://Scènes/Cameradevtest.gd" id="2_77l5n"]
+[ext_resource type="Script" path="res://Scripts/Cameradevtest.gd" id="3_xmyrq"]
 
 [node name="DevTestMap" type="Node2D"]
-script = ExtResource("1_te0xk")
+script = ExtResource("1_4exok")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(1, -1)
@@ -32,4 +32,4 @@ position_smoothing_enabled = true
 position_smoothing_speed = 3.0
 drag_horizontal_offset = 0.5
 drag_vertical_offset = -1.0
-script = ExtResource("2_77l5n")
+script = ExtResource("3_xmyrq")

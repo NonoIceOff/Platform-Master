@@ -165,6 +165,11 @@ ui_jump={
 
 pointing/emulate_touch_from_mouse=true
 
+[internationalization]
+
+locale/translation_remaps={}
+locale/translations=PackedStringArray("res://Translations/translations_pm.csv")
+
 [locale]
 
 translations=PackedStringArray("res://translations_pm.en.translation", "res://translations_pm.fr.translation")

@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://6vg1vaoy2lv7"]
+
+[ext_resource type="TileSet" uid="uid://bd6qw7g8wdruo" path="res://Tilesets/blocs_tileset.tres" id="1"]
+[ext_resource type="Script" path="res://Scripts/Chunk.gd" id="2"]
+
+[node name="Chunk" type="TileMap"]
+visible = false
+tile_set = ExtResource("1")
+format = 2
+script = ExtResource("2")
+
+[node name="TileMapBreak" type="TileMap" parent="."]
+tile_set = ExtResource("1")
+cell_quadrant_size = 32
+format = 2
+
+[node name="TileMapLights_Torchs" type="TileMap" parent="."]
+position = Vector2(1, -1)
+tile_set = ExtResource("1")
+cell_quadrant_size = 32
+format = 2
+
+[node name="TileMapLights" type="TileMap" parent="."]
+position = Vector2(1, -1)
+tile_set = ExtResource("1")
+cell_quadrant_size = 32
+format = 2
+
+[node name="TileMapPlacement" type="TileMap" parent="."]
+modulate = Color(1, 1, 1, 0.392157)
+position = Vector2(1, -1)
+tile_set = ExtResource("1")
+cell_quadrant_size = 32
+format = 2

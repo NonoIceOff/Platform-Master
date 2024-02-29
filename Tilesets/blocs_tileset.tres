@@ -1,10 +1,7 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bd6qw7g8wdruo"]
-
-[ext_resource type="Texture2D" uid="uid://dp3egr8lp3s8l" path="res://all_textures.png" id="1_kunqy"]
+[gd_resource type="TileSet" load_steps=2 format=3 uid="uid://bd6qw7g8wdruo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x46kb"]
 resource_name = "blocks"
-texture = ExtResource("1_kunqy")
 separation = Vector2i(1, 1)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)

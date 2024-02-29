@@ -1,15 +1,15 @@
 [gd_scene load_steps=13 format=3 uid="uid://bwdykr2rh4i0e"]
 
-[ext_resource type="Material" uid="uid://db1fy53axbpso" path="res://shaderflou.tres" id="1"]
+[ext_resource type="Material" uid="uid://db1fy53axbpso" path="res://Ressources/shaderflou.tres" id="1"]
 [ext_resource type="TileSet" uid="uid://bd6qw7g8wdruo" path="res://Tilesets/blocs_tileset.tres" id="3_3g6ky"]
 [ext_resource type="Script" path="res://Scripts/Buttons.gd" id="4"]
 [ext_resource type="Script" path="res://Scripts/Menu.gd" id="5"]
-[ext_resource type="Shape2D" path="res://PlayerCollision.tres" id="7"]
-[ext_resource type="Texture2D" uid="uid://t7ooeu178n4m" path="res://new_logo.png" id="7_xja6t"]
+[ext_resource type="Shape2D" path="res://Ressources/PlayerCollision.tres" id="7"]
+[ext_resource type="Texture2D" uid="uid://co2vqs00x3xes" path="res://Textures/new_logo.png" id="7_xja6t"]
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="9"]
 [ext_resource type="StyleBox" path="res://Themes/styleboxflat2_pressed.tres" id="9_yu7a7"]
 [ext_resource type="StyleBox" path="res://Themes/styleboxflat2_hover.tres" id="10_er4xa"]
-[ext_resource type="Script" path="res://Scènes/Sprite2D.gd" id="12_husad"]
+[ext_resource type="Script" path="res://Scripts/Sprite2D.gd" id="12_v076a"]
 [ext_resource type="Script" path="res://Scripts/BackgroundMap.gd" id="13"]
 [ext_resource type="Script" path="res://Scripts/PlayerBack.gd" id="14"]
 
@@ -149,7 +149,7 @@ scale = Vector2(4, 4)
 size_flags_horizontal = 3
 size_flags_vertical = 7
 mouse_filter = 1
-text = "menu_title_play"
+text = "MENU_TILE_PLAY"
 horizontal_alignment = 1
 vertical_alignment = 1
 clip_text = true
@@ -172,7 +172,7 @@ scale = Vector2(4, 4)
 size_flags_horizontal = 3
 size_flags_vertical = 7
 mouse_filter = 1
-text = "menu_title_settings"
+text = "MENU_TILE_SETTINGS"
 horizontal_alignment = 1
 vertical_alignment = 1
 clip_text = true
@@ -212,7 +212,7 @@ scale = Vector2(1.5, 1.5)
 text = "Platform Master Version"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-script = ExtResource("12_husad")
+script = ExtResource("12_v076a")
 
 [connection signal="pressed" from="MainMenu/Play" to="MainMenu" method="_on_Play_pressed"]
 [connection signal="pressed" from="MainMenu/Settings" to="MainMenu" method="_on_Settings_pressed"]
